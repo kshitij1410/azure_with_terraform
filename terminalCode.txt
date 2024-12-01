@@ -1,0 +1,19 @@
+K:\terraform_1.10.0_windows_amd64
+
+command:
+1) terraform --version
+2) terraform
+3) az --version
+
+
+steps:
+
+-> before start working on project do az login
+
+->terraform init
+(to get the image into our system and install it once)
+
+-> terraform validate
+-> terraform plan -var-file=variables.tfvars
+-> terraform apply -var-file=variables.tfvars(changes further in code)
+-> terraform destroy -var-file=variables.tfvars
